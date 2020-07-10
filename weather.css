@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg, #21cbde, #7021de);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.container{
+    height: 80vh;
+    padding: 2.5rem;
+    margin: 5rem auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0bb9bf;
+}
+
+@media(max-width:500px){
+    .container{
+        width: 80%;
+    }
+}
+@media(max-width:400px){
+    .container{
+        width: 95%;
+    }
+}
+
+.container .location{
+    font-family: 'Archivo Narrow', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+}
+
+.container .temperature{
+    font-family: 'Archivo Narrow', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    flex: 2;
+    text-align: center;
+}
+
+.degree-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.degree-section span{
+    margin: 10px;
+}
